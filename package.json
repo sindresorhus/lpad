@@ -1,0 +1,38 @@
+{
+  "name": "lpad",
+  "version": "0.1.0",
+  "description": "Left pad each line in a string or stdout/stderr",
+  "keywords": [
+    "pad",
+    "indent",
+    "cli",
+    "format",
+    "string"
+  ],
+  "homepage": "https://github.com/sindresorhus/lpad",
+  "bugs": "https://github.com/sindresorhus/lpad/issues",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "main": "lpad.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sindresorhus/lpad.git"
+  },
+  "scripts": {
+    "test": "mocha test-*.js"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

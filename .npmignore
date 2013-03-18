@@ -1,0 +1,7 @@
+.npmignore
+.travis.yml
+.editorconfig
+.jshintrc
+.gitattributes
+test-lpad.js
+screenshot.png
