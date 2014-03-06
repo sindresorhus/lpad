@@ -1,77 +1,42 @@
-# lpad [![Build Status](https://secure.travis-ci.org/sindresorhus/lpad.png?branch=master)](http://travis-ci.org/sindresorhus/lpad)
+# lpad [![Build Status](https://travis-ci.org/sindresorhus/lpad.png?branch=master)](https://travis-ci.org/sindresorhus/lpad)
 
-Left pad each line in a string or stdout/stderr.
-
-The stdout/stderr padding is especially useful in CLI tools when you don't directly control the output.
-
+> Left pad each line in a string
 
 ![screenshot](screenshot.png)
 
 
-## Getting started
+## Install
 
-Install: `npm install lpad`
+```bash
+$ npm install --save lpad
+```
+
+## Example
+
+```js
+var lpad = require('lpad');
+
+var str = 'foo\nbar';
+/*
+foo
+bar
+*/
+
+lpad(str, '    ');
+/*
+    foo
+    bar
+*/
+```
 
 
-## Documentation
-
+## API
 
 ### lpad(string, pad)
 
 Pads each line in a string with the supplied pad string.
 
-#### Example
-
-```js
-var lpad = require('lpad');
-var str = 'foo\nbar';
-
-console.log(str);
-/*
-foo
-bar
-*/
-
-console.log(lpad(str, '    '));
-/*
-    foo
-    bar
-*/
-```
-
-### lpad.stdout(pad)
-
-Pads each line of `process.stdout` with the supplied pad string until the method is called again with no arguments.
-
-#### Example
-
-```js
-var lpad = require('lpad');
-var str = 'foo\nbar';
-
-lpad.stdout('    ');  // start padding
-
-console.log(str);
-/*
-    foo
-    bar
-*/
-
-lpad.stdout();  // end padding
-
-console.log(str);
-/*
-foo
-bar
-*/
-```
-
-### lpad.stderr(pad)
-
-Pads each line of `process.stderr` with the supplied pad string until the method is called again with no arguments.
-
 
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)
-(c) [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
