@@ -1,4 +1,4 @@
-# lpad [![Build Status](https://travis-ci.org/sindresorhus/lpad.png?branch=master)](https://travis-ci.org/sindresorhus/lpad)
+# lpad [![Build Status](https://travis-ci.org/sindresorhus/lpad.svg?branch=master)](https://travis-ci.org/sindresorhus/lpad)
 
 > Left pad each line in a string
 
@@ -11,7 +11,7 @@
 $ npm install --save lpad
 ```
 
-## Example
+## Usage
 
 ```js
 var lpad = require('lpad');
