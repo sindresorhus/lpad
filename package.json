@@ -1,6 +1,6 @@
 {
   "name": "lpad",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Left pad each line in a string",
   "license": "MIT",
   "repository": "sindresorhus/lpad",
