@@ -2,14 +2,15 @@
 
 > Left pad each line in a string
 
-![screenshot](screenshot.png)
+![](screenshot.png)
 
 
 ## Install
 
-```sh
+```
 $ npm install --save lpad
 ```
+
 
 ## Usage
 
@@ -34,7 +35,7 @@ lpad(str, '    ');
 
 ### lpad(string, pad)
 
-Pads each line in a string with the supplied pad string.
+Pads each line in a string with the supplied string.
 
 
 ## License
