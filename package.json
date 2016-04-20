@@ -25,6 +25,9 @@
     "string",
     "str"
   ],
+  "dependencies": {
+    "split-lines": "^1.0.0"
+  },
   "devDependencies": {
     "mocha": "*"
   }
