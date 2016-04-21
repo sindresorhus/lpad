@@ -1,6 +1,7 @@
 'use strict';
+var splitLines = require('split-lines');
 module.exports = function (str, pad) {
-	return pad ? String(str).split(/\r?\n/).map(function (line) {
+	return pad ? splitLines(String(str)).map(function (line) {
 		return line ? pad + line : line;
 	}).join('\n') : str;
 };
