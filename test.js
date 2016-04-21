@@ -1,10 +1,9 @@
-'use strict';
-var assert = require('assert');
-var lpad = require('./');
+import test from 'ava';
+import m from './';
 
-it('should pad string', function () {
-	assert.equal(lpad('foo\nbar', '    '), '    foo\n    bar');
-	assert.equal(lpad('foo\r\nbar', '    '), '    foo\n    bar');
-	assert.equal(lpad('foo\nbar\n', '    '), '    foo\n    bar\n');
-	assert.equal(lpad('foo\n\nbar', '    '), '    foo\n\n    bar');
+test(t => {
+	t.is(m('foo\nbar', '    '), '    foo\n    bar');
+	t.is(m('foo\r\nbar', '    '), '    foo\n    bar');
+	t.is(m('foo\nbar\n', '    '), '    foo\n    bar\n');
+	t.is(m('foo\n\nbar', '    '), '    foo\n\n    bar');
 });
