@@ -1,4 +1,4 @@
-# lpad [![Build Status](https://travis-ci.org/sindresorhus/lpad.svg?branch=master)](https://travis-ci.org/sindresorhus/lpad)
+# lpad
 
 > Left pad each line in a string
 
