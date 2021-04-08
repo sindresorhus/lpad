@@ -1,8 +1,9 @@
-'use strict';
-var splitLines = require('split-lines');
+import splitLines from 'split-lines';
 
-module.exports = function (str, pad) {
-	return pad ? splitLines(String(str)).map(function (line) {
-		return line ? pad + line : line;
-	}).join('\n') : str;
-};
+export default function leftPad(string, padString) {
+	if (!(typeof string === 'string' && typeof padString === 'string')) {
+		throw new TypeError('Expected both arguments to be of type string');
+	}
+
+	return splitLines(string).map(line => line.length > 0 ? `${padString}${line}` : line).join('\n');
+}

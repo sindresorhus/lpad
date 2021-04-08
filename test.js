@@ -1,9 +1,9 @@
 import test from 'ava';
-import m from './';
+import leftPad from './index.js';
 
-test(t => {
-	t.is(m('foo\nbar', '    '), '    foo\n    bar');
-	t.is(m('foo\r\nbar', '    '), '    foo\n    bar');
-	t.is(m('foo\nbar\n', '    '), '    foo\n    bar\n');
-	t.is(m('foo\n\nbar', '    '), '    foo\n\n    bar');
+test('main', t => {
+	t.is(leftPad('foo\nbar', '    '), '    foo\n    bar');
+	t.is(leftPad('foo\r\nbar', '    '), '    foo\n    bar');
+	t.is(leftPad('foo\nbar\n', '    '), '    foo\n    bar\n');
+	t.is(leftPad('foo\n\nbar', '    '), '    foo\n\n    bar');
 });

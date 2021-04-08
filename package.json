@@ -1,35 +1,38 @@
 {
-  "name": "lpad",
-  "version": "2.0.1",
-  "description": "Left pad each line in a string",
-  "license": "MIT",
-  "repository": "sindresorhus/lpad",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "pad",
-    "indent",
-    "format",
-    "string",
-    "str"
-  ],
-  "dependencies": {
-    "split-lines": "^1.0.0"
-  },
-  "devDependencies": {
-    "ava": "0.16.0",
-    "xo": "0.16.0"
-  }
+	"name": "lpad",
+	"version": "2.0.1",
+	"description": "Left-pad each line in a string",
+	"license": "MIT",
+	"repository": "sindresorhus/lpad",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"pad",
+		"indent",
+		"format",
+		"string",
+		"padding"
+	],
+	"dependencies": {
+		"split-lines": "^3.0.0"
+	},
+	"devDependencies": {
+		"ava": "3.15.0",
+		"xo": "0.38.2"
+	}
 }

@@ -1,55 +1,47 @@
 # lpad
 
-> Left pad each line in a string
+> Left-pad each line in a string
 
 ![](screenshot.png)
-
 
 ## Install
 
 ```
-$ npm install --save lpad
+$ npm install lpad
 ```
-
 
 ## Usage
 
 ```js
-const lpad = require('lpad');
+import leftPad from 'lpad';
 
-const str = 'foo\nbar';
+const string = 'foo\nbar';
 /*
 foo
 bar
 */
 
-lpad(str, '    ');
+lpad(string, '    ');
 /*
     foo
     bar
 */
 ```
 
-
 ## API
 
-### lpad(input, pad)
+### lpad(string, padString)
 
 Pads each line in a string with the supplied string.
 
-#### input
+#### string
 
 Type: `string`
 
 String that will be padded.
 
-#### pad
+#### padString
 
 Type: `string`
 
 String that will be prepended to each line.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
